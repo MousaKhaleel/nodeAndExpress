@@ -71,6 +71,7 @@ app.get('/cumulativesum/:num',function(req,res){
 // /////////////////////////////////////////////////////////
 function checkRev(r) {
     let word=r;
+    word=word.toLowerCase();
     let rev='';
     for (let i=word.length; i>0;i--) {
         rev+=word[i-1];
